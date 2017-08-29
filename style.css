@@ -91,7 +91,7 @@ header {
 }
 /* Content displayed in the main box to the left of the screen. */
 #mainContent {
-    /* width: 590px; */
+    width: 100%;
     padding: 40px 30px 40px 30px;
     margin-bottom: 50px;
     background-color: white;
@@ -128,7 +128,8 @@ header {
 }
 /* Maintains aspect ratio of image but does not allow image to be any wider than set amount of pixels. */
 .thumbnail img {
-    max-width: 270px;
+    /* max-width: 270px; */
+    max-width: 100%;
 }
 
 .left {
@@ -142,16 +143,20 @@ header {
 .label {
     position: absolute;
     bottom: 20px;
-    left: 0px;
+    left: 15px;
     height: 60px;
     line-height: 60px;
-    width: 100%;
+    width: calc(100% - 30px);
     text-align: center;
     color: white;
     font-size: 1.2em;
     background-color: rgba(74, 170, 165, .7);
 }
 /* The following styles are specific to the contact us page */
+form {
+    width: 100%;
+}
+
 textarea {
     resize: none;
     width: calc(100% - 20px);
@@ -264,4 +269,8 @@ footer {
     line-height: 80px;
     color: #CCCCCC;
     text-align: center;
+}
+
+#copyright {
+    margin: 0px;
 }
